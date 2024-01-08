@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://img.icons8.com/color/48/000000/magritte.png"/>
+  <img src="https://img.icons8.com/color/48/000000/winnner.png"/>
 </p>
 <h1 align="center">
   aronlh.com - v1
