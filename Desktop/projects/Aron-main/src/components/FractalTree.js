@@ -2,36 +2,32 @@ import React from "react";
 import { ReactP5Wrapper } from "react-p5-wrapper";
 import "../styles/FractalTree.css";
 
-let angle;
+let angleX = 0;
+let angleY = 0;
+let side = 100;
 
-const Sketch = p5 => {
+const Sketch = (p5) => {
   p5.setup = () => {
-    p5.createCanvas(400, 400, "transparent");
-    angle = p5.PI / 4;
+    p5.createCanvas(400, 400, "webgl"); // Use webgl for 3D rendering
     p5.stroke(255);
   };
 
   p5.draw = () => {
-    p5.clear();
-    p5.translate(200, p5.height);
-    angle = p5.map(p5.sin(p5.frameCount * 0.01), -1, 1, p5.PI / 2, p5.PI / 16); // vary the angle using sin()
-    branch(100);
+    p5.background(10, 25, 47); // Set background color to Navy (#0a192f)
+
+    p5.rotateX(angleX);
+    p5.rotateY(angleY);
+
+    drawCube();
+    
+    angleX += 0.01;
+    angleY += 0.01;
   };
 
-  function branch(len) {
-    p5.line(0, 0, 0, -len);
-    p5.translate(0, -len);
-    if (len > 4) {
-      p5.push();
-      p5.rotate(angle);
-      branch(len * 0.67);
-      p5.pop();
-      p5.push();
-      p5.rotate(-angle);
-      branch(len * 0.67);
-      p5.pop();
-    }
-  }
+  const drawCube = () => {
+    p5.fill(255, 255, 0); // Set cube color to yellow
+    p5.box(side); // Draw a cube with the specified side length
+  };
 };
 
 const FractalTree = () => (

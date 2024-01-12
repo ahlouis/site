@@ -6,6 +6,7 @@ import "react-typist/dist/Typist.css";
 import EmailRoundedIcon from "@material-ui/icons/EmailRounded";
 import FadeInSection from "./FadeInSection";
 import FractalTree from "./FractalTree";
+import Cube from "./Cube"; // Import the Cube component
 
 class Intro extends React.Component {
   constructor() {
