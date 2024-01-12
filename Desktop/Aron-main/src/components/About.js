@@ -31,7 +31,7 @@ class About extends React.Component {
         science, robotics and AI. I also love extreme sports.
       </p>
     );
-
+// anotha test
     const tech_stack = [
       "Typescript",
       "Python",
