@@ -1,0 +1,25 @@
+/* CubeComponent.css */
+
+.cube-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  /* Customize the styling for the cube */
+  .cube {
+    width: 250px;
+    height: 250px;
+    background-color: yellow; /* Customize the color as needed */
+    border: 2px solid black; /* Customize the border as needed */
+  }
+  
+  @media only screen and (max-width: 600px) {
+    /* Adjust styling for smaller screens */
+    .cube {
+      width: 150px;
+      height: 150px;
+    }
+  }
+  
