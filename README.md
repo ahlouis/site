@@ -4,7 +4,7 @@
   aronlh.com - v1
 </h1>
 <p align="center">
-  The first iteration of <a href="https://aronlh.netlify.app/" target="_blank">aronlh.com</a> built with React.js leveraging Material UI.
+  The first iteration of <a href="https://aronlh.netlify.app/" target="_blank">aronlh.netlify.app</a> built with React.js leveraging Material UI.
 </p>
 
 
